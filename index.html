@@ -2,31 +2,180 @@
 <html lang="ka">
 <head>
 <meta charset="UTF-8">
-<title>ჩემი Landing Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ბლოკის ქარხანა</title>
+
 <style>
-body {
-  font-family: Arial;
-  text-align: center;
-  padding: 50px;
-  background: #f4f4f4;
+:root{
+  --green:#2e7d32;
+  --dark:#424242;
+  --light:#f5f5f5;
 }
-.container {
-  background: white;
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: auto;
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:var(--light);
+  color:#222;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--green),#1b5e20);
+  color:white;
+  padding:80px 20px;
+  text-align:center;
+}
+
+header h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+header p{
+  font-size:18px;
+  opacity:0.95;
+}
+
+/* SECTIONS */
+.section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:40px;
+  color:var(--dark);
+  font-size:32px;
+}
+
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+.card h3{
+  color:var(--green);
+  margin-bottom:10px;
+}
+
+/* CTA */
+.cta{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.cta h2{
+  margin-bottom:20px;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--green);
+  color:white;
+  padding:14px 28px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  opacity:0.9;
+}
+
+/* CONTACT */
+.contact p{
+  text-align:center;
+  font-size:18px;
+  margin:8px 0;
+}
+
+/* FOOTER */
+footer{
+  background:#2b2b2b;
+  color:#ccc;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
+
+/* MOBILE */
+@media (max-width:600px){
+  header h1{font-size:30px;}
+  .section h2{font-size:26px;}
 }
 </style>
 </head>
-<body>
-<div class="container">
-<h1>გამარჯობა 👋</h1>
-<p>ეს არის ჩემი ოფიციალური გვერდი.</p>
 
-<h3>დაგვიკავშირდით</h3>
-<p>Email: your@email.com</p>
-<p>ტელ: 555 00 00 00</p>
-</div>
+<body>
+
+<header>
+  <h1>ბლოკის ქარხანა</h1>
+  <p>უმაღლესი ხარისხის სამშენებლო ბლოკები</p>
+</header>
+
+<section class="section">
+  <h2>ჩვენ შესახებ</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    ვაწარმოებთ მაღალი ხარისხის ბეტონის ბლოკებს თანამედროვე დანადგარებით.
+    უზრუნველვყოფთ სწრაფ მიწოდებას და კონკურენტულ ფასებს.
+  </p>
+</section>
+
+<section class="section">
+  <h2>რატომ ჩვენ?</h2>
+  <div class="features">
+    <div class="card">
+      <h3>მაღალი ხარისხი</h3>
+      <p>მტკიცე და სტანდარტის შესაბამისი ბლოკები.</p>
+    </div>
+    <div class="card">
+      <h3>სწრაფი მიწოდება</h3>
+      <p>ოპერატიული ტრანსპორტირება მთელ საქართველოში.</p>
+    </div>
+    <div class="card">
+      <h3>საუკეთესო ფასი</h3>
+      <p>პირდაპირ ქარხნიდან — ზედმეტი დანამატების გარეშე.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>შეუკვეთე დღესვე</h2>
+  <a class="btn" href="tel:555000000">დაგვირეკე</a>
+</section>
+
+<section class="section contact">
+  <h2>კონტაქტი</h2>
+  <p>📞 ტელ: 555 00 00 00</p>
+  <p>📧 Email: info@blokebi.ge</p>
+  <p>📍 მისამართი: თბილისი, საქართველო</p>
+</section>
+
+<footer>
+  © 2026 ბლოკის ქარხანა — ყველა უფლება დაცულია
+</footer>
+
 </body>
 </html>
