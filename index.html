@@ -173,6 +173,35 @@ footer{
 .whatsapp-float:hover{
   transform:scale(1.1);
 }
+  .table-wrap{
+  overflow-x:auto;
+}
+
+.spec-table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+
+.spec-table th{
+  background:#2e7d32;
+  color:white;
+  padding:14px;
+  font-weight:bold;
+}
+
+.spec-table td{
+  padding:12px;
+  border-bottom:1px solid #eee;
+  text-align:center;
+}
+
+.spec-table tr:hover{
+  background:#f5f5f5;
+}
 </style>
   
 </head>
@@ -227,7 +256,46 @@ footer{
   <h2>შეუკვეთე დღესვე</h2>
   <a class="btn" href="tel:5570690009">დაგვირეკე</a>
 </section>
+<section class="section">
+  <h2>ჩვენი პროდუქცია</h2>
 
+  <div class="table-wrap">
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>პროდუქტი</th>
+          <th>ზომა (მმ)</th>
+          <th>სიმკვრივე</th>
+          <th>წონა</th>
+          <th>გამოყენება</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>აირბლოკი D500</td>
+          <td>600×200×300</td>
+          <td>D500</td>
+          <td>≈18 კგ</td>
+          <td>გარე კედლები</td>
+        </tr>
+        <tr>
+          <td>აირბლოკი D400</td>
+          <td>600×200×250</td>
+          <td>D400</td>
+          <td>≈15 კგ</td>
+          <td>შიდა ტიხრები</td>
+        </tr>
+        <tr>
+          <td>აირბლოკი D600</td>
+          <td>600×200×300</td>
+          <td>D600</td>
+          <td>≈22 კგ</td>
+          <td>მზიდი კედლები</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 <section class="section contact">
   <h2>კონტაქტი</h2>
   <p>📞 ტელ: 557 06 90 09</p>
