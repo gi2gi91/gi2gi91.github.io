@@ -218,7 +218,22 @@ footer{
   </a>
 </p>
 </section>
+<!-- Messenger Chat Plugin -->
+<div id="fb-root"></div>
 
+<script>
+  var chatbox = document.createElement('div');
+  chatbox.id = 'fb-customer-chat';
+  chatbox.className = 'fb-customerchat';
+  document.body.appendChild(chatbox);
+
+  chatbox.setAttribute("page_id", "576084312261157");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<script async defer crossorigin="anonymous"
+src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js">
+</script>
 <footer>
   © 2026 სმარტ ბლოკი — ყველა უფლება დაცულია
 </footer>
