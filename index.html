@@ -165,17 +165,22 @@ footer{
 .ig-btn:hover {
   background: #c13584;
 }
-  .tt-btn {
-  display: inline-block;
+ .tt-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 10px 16px;
-  background: #000000;
+  background: #111;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  transition: 0.3s;
 }
+
 .tt-btn:hover {
   background: #ff0050;
+  transform: translateY(-2px);
 }
   .whatsapp-float{
   position:fixed;
@@ -370,9 +375,18 @@ footer{
     📸 გვიპოვე Instagram-ზე
   </a>
 </p>
-  <p>
+<p>
   <a href="https://www.tiktok.com/@smart.block" target="_blank" class="tt-btn">
-    🎵 გვიპოვე TikTok-ზე
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+         viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 6px;">
+      <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-1.885V14.33a5.32 
+      5.32 0 1 1-4.607-5.277v2.745a2.575 2.575 0 1 0 
+      1.77 2.444V0h2.837a7.634 7.634 0 0 0 
+      3.77 4.095v2.591z"/>
+    </svg>
+
+    გვიპოვე TikTok-ზე
   </a>
 </p>
 </section>
