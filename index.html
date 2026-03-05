@@ -233,6 +233,41 @@ footer{
 .spec-table tr:hover{
   background:#f5f5f5;
 }
+  .products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+}
+
+.product-card{
+  background:white;
+  border-left:6px solid var(--green);
+  border-radius:10px;
+  padding:20px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  text-align:center;
+  transition:0.2s;
+}
+
+.product-card:hover{
+  transform:translateY(-5px);
+}
+
+.product-card img{
+  width:100%;
+  max-width:200px;
+  margin-bottom:15px;
+}
+
+.product-card h3{
+  color:var(--dark);
+  margin-bottom:10px;
+}
+
+.product-card p{
+  font-size:14px;
+  margin:4px 0;
+}
 </style>
   
 </head>
@@ -282,7 +317,45 @@ footer{
 </section>
 <section class="section">
   <h2>ჩვენი პროდუქცია</h2>
+<section class="section">
+<h2>ჩვენი პროდუქცია</h2>
 
+<div class="products">
+
+<div class="product-card">
+<img src="airblock.png">
+<h3>აირბლოკი 60×30×10</h3>
+<p>სიმკვრივე: D500</p>
+<p>რაოდენობა m³-ში: 56</p>
+<p>წონა: ≈10 კგ</p>
+</div>
+
+<div class="product-card">
+<img src="airblock.png">
+<h3>აირბლოკი 60×30×15</h3>
+<p>სიმკვრივე: D500</p>
+<p>რაოდენობა m³-ში: 37</p>
+<p>წონა: ≈12 კგ</p>
+</div>
+
+<div class="product-card">
+<img src="airblock.png">
+<h3>აირბლოკი 60×30×20</h3>
+<p>სიმკვრივე: D500</p>
+<p>რაოდენობა m³-ში: 28</p>
+<p>წონა: ≈18 კგ</p>
+</div>
+
+<div class="product-card">
+<img src="airblock.png">
+<h3>აირბლოკი 60×30×25</h3>
+<p>სიმკვრივე: D500</p>
+<p>რაოდენობა m³-ში: 22</p>
+<p>წონა: ≈22 კგ</p>
+</div>
+
+</div>
+</section>
   <div class="table-wrap">
     <table class="spec-table">
       <thead>
