@@ -249,7 +249,16 @@ transition:0.2s;
 color:#2e7d32;
 transform:scale(1.2);
 }
-  
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery img {
+  width: calc(33.333% - 20px);
+  height: auto;
+}
 </style>
  
 </head>
@@ -274,12 +283,11 @@ transform:scale(1.2);
     რომელიც სრულად დააკმაყოფილებს თანამედროვე მშენებლობის მოთხოვნებს.
    </p>
      
-    <div style="text-align:center; margin:20px;">
-    <img src="airblock.png" alt="აირბლოკი" class="product-img">
-    <div style="text-align:center; margin:20px;">
-    <img src="airblock 2.png" alt="აირბლოკი2" class="product-img">
-    <div style="text-align:center; margin:20px;">
-    <img src="airblock 3.png" alt="აირბლოკი3" class="product-img">
+  <div class="gallery">
+  <img src="airblock.png">
+  <img src="airblock 2.png">
+  <img src="airblock 3.png">
+</div>
  
   </div>
 </section>
